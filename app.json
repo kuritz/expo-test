@@ -2,8 +2,8 @@
   "expo": {
     "name": "SDK 33 Test",
     "slug": "sdk-test",
-    "version": "0.1",
-    "sdkVersion": "32.0.0",
+    "version": "0.2",
+    "sdkVersion": "33.0.0",
     "android": {
       "package": "co.test.sdk33"
     }
