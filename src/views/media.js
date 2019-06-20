@@ -6,7 +6,6 @@ import {
   View
 } from "react-native";
 import { ScreenOrientation } from "expo";
-import * as FaceDetector from 'expo-face-detector';
 import { Camera } from 'expo-camera';
 import * as FileSystem from 'expo-file-system';
 import KeepAwake from 'expo-keep-awake';
@@ -178,13 +177,6 @@ class Media extends Component {
           <Camera
             style={styles.camera}
             type={Camera.Constants.Type.front}
-            onFacesDetected={this._onFacesDetected}
-            onFaceDetectionError={this._onFaceDetectionError}
-            faceDetectorSettings={{
-              mode: FaceDetector.Constants.Mode.accurate,
-              detectLandmarks: FaceDetector.Constants.Mode.none,
-              runClassifications: FaceDetector.Constants.Mode.none,
-            }}
           />
         }
       </View>
