@@ -1,7 +1,7 @@
 import React from 'react';
 import { ActivityIndicator, StyleSheet, View } from 'react-native';
 import { connect } from 'react-redux';
-import { FileSystem } from 'expo';
+import * as FileSystem from 'expo-file-system';
 
 import DrawerNav from './drawer-nav';
 import {

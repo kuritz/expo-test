@@ -1,7 +1,7 @@
 import React from 'react';
 import { Alert } from 'react-native';
 import { Provider } from 'react-redux';
-import { Permissions } from 'expo';
+import * as Permissions from 'expo-permissions';
 import Sentry from 'sentry-expo';
 
 import AppIndex from './src/index';

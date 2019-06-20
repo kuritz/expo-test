@@ -5,14 +5,12 @@ import {
   StyleSheet,
   View
 } from "react-native";
-import {
-  ScreenOrientation,
-  Video,
-  KeepAwake,
-  FileSystem,
-  Camera,
-  FaceDetector
-} from "expo";
+import { ScreenOrientation } from "expo";
+import * as FaceDetector from 'expo-face-detector';
+import { Camera } from 'expo-camera';
+import * as FileSystem from 'expo-file-system';
+import KeepAwake from 'expo-keep-awake';
+import { Video } from 'expo-av';
 import Sentry from 'sentry-expo';
 
 import {
